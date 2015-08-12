@@ -1,25 +1,95 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Anchor_Man" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="mario-clouds.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JlP-uG-4Fw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="573"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's The Weather Today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcm-jb-0Wa">
+                                <rect key="frame" x="62" y="48" width="197" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="CyR-t2-0AL"/>
+                                    <constraint firstAttribute="width" constant="197" id="so6-85-Duq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.98102490135461817" blue="0.976598307593327" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter city name here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="piH-Jn-lNI">
+                                <rect key="frame" x="38" y="215" width="245" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="XT9-YD-fka"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Xwq-wC-hn5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="Y5a-fh-Fl0"/>
+                                    <constraint firstAttribute="height" constant="30" id="bwb-tx-4aY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxr-zt-K6Z">
+                                <rect key="frame" x="137" y="298" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BX7-RZ-Ilf"/>
+                                    <constraint firstAttribute="width" constant="46" id="vRv-mm-BbY"/>
+                                </constraints>
+                                <state key="normal" title="Find">
+                                    <color key="titleColor" red="1" green="0.98102490139999998" blue="0.97659830759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nej-SJ-kkI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4W-so-3kJ">
+                                <rect key="frame" x="34" y="417" width="253" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="piH-Jn-lNI" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="0nZ-gg-Eao"/>
+                            <constraint firstAttribute="centerX" secondItem="Xcm-jb-0Wa" secondAttribute="centerX" id="17p-gn-P5r"/>
+                            <constraint firstItem="JlP-uG-4Fw" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="I4z-E0-rb4"/>
+                            <constraint firstItem="piH-Jn-lNI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="RwR-Ih-6jI"/>
+                            <constraint firstAttribute="centerX" secondItem="Mxr-zt-K6Z" secondAttribute="centerX" id="UHX-q2-hBv"/>
+                            <constraint firstItem="Mxr-zt-K6Z" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="121" id="Wbe-7G-JPa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mxr-zt-K6Z" secondAttribute="trailing" constant="121" id="XAD-hm-MGh"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="JlP-uG-4Fw" secondAttribute="bottom" constant="-5" id="g1T-Yd-bsW"/>
+                            <constraint firstAttribute="centerX" secondItem="piH-Jn-lNI" secondAttribute="centerX" id="h41-bK-0oh"/>
+                            <constraint firstItem="Mxr-zt-K6Z" firstAttribute="top" secondItem="piH-Jn-lNI" secondAttribute="bottom" constant="53" id="ntS-NY-Hdh"/>
+                            <constraint firstItem="piH-Jn-lNI" firstAttribute="top" secondItem="Xcm-jb-0Wa" secondAttribute="bottom" constant="114" id="rDG-e2-ZFb"/>
+                            <constraint firstItem="Xcm-jb-0Wa" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="28" id="vio-I8-5Dh"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="cityTextField" destination="piH-Jn-lNI" id="BJi-zi-rse"/>
+                        <outlet property="statusLabel" destination="N4W-so-3kJ" id="uYm-2n-5NN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="283" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mario-clouds.jpg" width="520" height="455"/>
+    </resources>
 </document>

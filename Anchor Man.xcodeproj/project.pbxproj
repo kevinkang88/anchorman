@@ -14,6 +14,7 @@
 		67E817761B79A71D0062A606 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67E817751B79A71D0062A606 /* Images.xcassets */; };
 		67E817791B79A71D0062A606 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67E817771B79A71D0062A606 /* LaunchScreen.xib */; };
 		67E817851B79A71D0062A606 /* Anchor_ManTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E817841B79A71D0062A606 /* Anchor_ManTests.swift */; };
+		67E817901B79ADB20062A606 /* mario-clouds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67E8178F1B79ADB20062A606 /* mario-clouds.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		67E8177E1B79A71D0062A606 /* Anchor ManTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Anchor ManTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E817831B79A71D0062A606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67E817841B79A71D0062A606 /* Anchor_ManTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anchor_ManTests.swift; sourceTree = "<group>"; };
+		67E8178F1B79ADB20062A606 /* mario-clouds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mario-clouds.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		67E817681B79A71D0062A606 /* Anchor Man */ = {
 			isa = PBXGroup;
 			children = (
+				67E8178E1B79AD960062A606 /* Img */,
 				67E8176B1B79A71D0062A606 /* AppDelegate.swift */,
 				67E817701B79A71D0062A606 /* ViewController.swift */,
 				67E817721B79A71D0062A606 /* Main.storyboard */,
@@ -113,6 +116,14 @@
 				67E817831B79A71D0062A606 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67E8178E1B79AD960062A606 /* Img */ = {
+			isa = PBXGroup;
+			children = (
+				67E8178F1B79ADB20062A606 /* mario-clouds.jpg */,
+			);
+			name = Img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 			files = (
 				67E817741B79A71D0062A606 /* Main.storyboard in Resources */,
 				67E817791B79A71D0062A606 /* LaunchScreen.xib in Resources */,
+				67E817901B79ADB20062A606 /* mario-clouds.jpg in Resources */,
 				67E817761B79A71D0062A606 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
