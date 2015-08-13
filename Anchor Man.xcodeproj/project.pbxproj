@@ -15,6 +15,7 @@
 		67E817791B79A71D0062A606 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67E817771B79A71D0062A606 /* LaunchScreen.xib */; };
 		67E817851B79A71D0062A606 /* Anchor_ManTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E817841B79A71D0062A606 /* Anchor_ManTests.swift */; };
 		67E817901B79ADB20062A606 /* mario-clouds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67E8178F1B79ADB20062A606 /* mario-clouds.jpg */; };
+		67E817921B7C44DB0062A606 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E817911B7C44DB0062A606 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		67E817831B79A71D0062A606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67E817841B79A71D0062A606 /* Anchor_ManTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anchor_ManTests.swift; sourceTree = "<group>"; };
 		67E8178F1B79ADB20062A606 /* mario-clouds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mario-clouds.jpg"; sourceTree = "<group>"; };
+		67E817911B7C44DB0062A606 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				67E8178E1B79AD960062A606 /* Img */,
 				67E8176B1B79A71D0062A606 /* AppDelegate.swift */,
+				67E817911B7C44DB0062A606 /* ResultViewController.swift */,
 				67E817701B79A71D0062A606 /* ViewController.swift */,
 				67E817721B79A71D0062A606 /* Main.storyboard */,
 				67E817751B79A71D0062A606 /* Images.xcassets */,
@@ -230,6 +233,7 @@
 				67E817711B79A71D0062A606 /* ViewController.swift in Sources */,
 				67E8176C1B79A71D0062A606 /* AppDelegate.swift in Sources */,
 				67E8176F1B79A71D0062A606 /* Anchor_Man.xcdatamodeld in Sources */,
+				67E817921B7C44DB0062A606 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

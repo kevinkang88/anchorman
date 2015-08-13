@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func findTapped(sender: AnyObject) {
+    @IBAction func findTappede(sender: AnyObject) {
         NSLog("find button tapped, begin search")
         var url = NSURL(string: "http://www.weather-forecast.com/locations/" + cityTextField.text.stringByReplacingOccurrencesOfString(" ", withString: "-") + "/forecasts/latest")
         if(url != nil){
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
                     println(urlContent)
                     var urlContentArray = urlContent?.componentsSeparatedByString("<span class=\"phrase\">")
                     
-                    if urlContentArray!.count > 0 {
+                    if urlContentArray!.count > 1 {
                         var weatherArray = urlContentArray![1].componentsSeparatedByString("</span>")
                         weather = weatherArray[0] as! String
                         weather = weather.stringByReplacingOccurrencesOfString("&deg;", withString: "º")
@@ -67,9 +67,15 @@ class ViewController: UIViewController {
                     if urlError == true {
                         self.showError()
                     }else{
-                        self.statusLabel.text = weather
                         self.currentWeatherForecast = weather
                         // present results VC
+                        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                        let viewController = storyBoard.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
+                        viewController.forecast = weather
+                        viewController.cityName = self.cityTextField.text
+                        self.cityTextField.text = ""
+                        self.presentViewController(viewController, animated: true, completion: nil)
+                        
                     }
                 })
                 
